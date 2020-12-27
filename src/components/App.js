@@ -26,10 +26,10 @@ class App extends React.Component {
                     <h2>Enjoy the music</h2>
                     <Display displayText={this.state.displayText} />
                 </div>
-                {drumpadData.map((drumpad) => (
+                {drumpadData.map((data) => (
                     <Drumpad
-                        key={drumpad.id}
-                        drumpad={drumpad}
+                        key={data.id}
+                        drumpad={data}
                         updateDisplay={this.updateDisplay}
                     />
                 ))}

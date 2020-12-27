@@ -17,17 +17,19 @@ class Drumpad extends React.Component {
     }
 
     handleClick = () => {
-        this.audio.play();
-        this.audio.currentTime = 0;
-        this.props.updateDisplay(this.props.drumpad.id);
+        this.playAudio(this.props.drumpad.id);
     };
 
     handleKeyDown = (e) => {
         if (e.keyCode === this.props.drumpad.unicode) {
-            this.audio.play();
-            this.audio.currentTime = 0;
-            this.props.updateDisplay(this.props.drumpad.id);
+            this.playAudio(this.props.drumpad.id);
         }
+    };
+
+    playAudio = (displayText) => {
+        this.audio.play();
+        this.audio.currentTime = 0;
+        this.props.updateDisplay(displayText);
     };
 
     render() {
