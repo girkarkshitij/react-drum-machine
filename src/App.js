@@ -64,7 +64,6 @@ class App extends React.Component {
             displayText: 'Click a button or press a key',
         };
         this.updateDisplay = this.updateDisplay.bind(this);
-        this.clearDisplay = this.clearDisplay.bind(this);
     }
 
     updateDisplay(message) {
