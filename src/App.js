@@ -73,12 +73,6 @@ class App extends React.Component {
         });
     }
 
-    clearDisplay() {
-        this.setState({
-            displayText: '',
-        });
-    }
-
     render() {
         return (
             <div id='container'>
