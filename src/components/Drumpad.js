@@ -43,6 +43,7 @@ class Drumpad extends React.Component {
                 <audio
                     ref={(ref) => (this.audio = ref)}
                     id={this.props.drumpad.innerText}
+                    className='clip'
                     src={this.props.drumpad.audioLink}
                 ></audio>
                 {this.props.drumpad.innerText}
