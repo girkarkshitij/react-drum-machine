@@ -2,6 +2,7 @@ import React from 'react';
 import drumpadData from './drumpadData';
 import Display from './Display';
 import Drumpad from './Drumpad';
+import '../css/main.css';
 
 class App extends React.Component {
     constructor(props) {
@@ -23,7 +24,6 @@ class App extends React.Component {
             <div id='container'>
                 <div id='drum-machine'>
                     <h1>FCC Drum Machine</h1>
-                    <h2>Enjoy the music</h2>
                     <Display displayText={this.state.displayText} />
                 </div>
                 {drumpadData.map((data) => (

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+
+$bg-color: #272727;
+$light-bg-color: #747474;
+$alpha-color: #ff652f;
+$beta-color: #ffe400;
+$gamma-color: #14a76c;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+    background-color: $bg-color;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: $alpha-color;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: $beta-color;
+}
